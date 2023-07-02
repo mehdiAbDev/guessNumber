@@ -1,0 +1,197 @@
+* {
+    /* outline: 3px dotted red; */
+}
+
+:root {
+    --hookergreen: #397367;
+    --robineggblue: #63CCCA;
+    --keppel: #5DA399;
+    --darkcyan: #42858C;
+    --onyx: #35393C;
+}
+
+body,
+main {
+    overflow-x: hidden;
+    padding: 20px;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    background-color: var(--onyx);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2em;
+
+}
+header h2 {
+    cursor: context-menu;
+
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header p {
+    color: var(--keppel);
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: context-menu;
+}
+
+.btn {
+    background-color: var(--keppel);
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    width: 160px;
+    height: 65px;
+    transition: all 0.15s;
+    color: var(--onyx);
+}
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--hookergreen);
+}
+.check {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 2em;
+    margin-right: auto;
+}
+input[type = 'number'] {
+    box-shadow: 0 0 10px inset var(--onyx);
+    border: none;
+    border-radius: 30px;
+    height: 75px;
+    text-align: center;
+    font-size: 2em;
+    width: 200px;
+    background-color: var(--darkcyan);
+}
+.engine {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.infos {
+    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+
+}
+main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-inline: auto;
+    height: 5em;
+    width: 5rem;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 10px solid var(--darkcyan);
+    transition: width 0.3s, height 0.3s;
+}
+#box {
+    position:relative;
+    width: 4em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: var(--keppel);
+    transition: all 0.3s;
+    /* animation: wave 1.5s 1s cubic-bezier(.42,0,.58,1) infinite ; */
+}
+.correctTheBox {
+    width: 10em;
+    height: 10em;
+}
+footer {
+    text-align: center;
+}
+footer span {
+    color: var(--keppel);
+}
+input::placeholder {
+    color: var(--onyx);
+    font-size: 20px;
+}
+@keyframes wave {
+    0% {
+        top: 6px;
+    }
+    25% {
+        top: -6px;
+    }
+    50% {
+        top: -6px;
+    }
+    75% {
+        top: 6px;
+    }
+    100% {
+        top: 6px;
+    }
+}
+@keyframes wrong {
+    0% {
+        /* right: ;xxx */
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+}
+.correctBox{
+    background-color: var(--hookergreen);
+}
+.waveAnimation {
+    animation: wave 1s 1s cubic-bezier(.42,0,.58,1) infinite ;
+
+}
+
+@media (max-width : 760px) {
+    header {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    body, main {
+        overflow-x: hidden;
+    }
+    header h2 {
+        font-size: 1em;
+    }
+    .engine {
+        flex-direction: column;
+    }
+    .infos {
+ 
+        text-align: center;
+        margin-left: 2em;
+    }
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}

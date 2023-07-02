@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <button class="btn" id="again">Again</button>
+            <h2>Guess my number
+                <b style="font-weight: bold;">
+                    . . .</b>
+            </h2>
+            <p>Chose between 1 and 20</p>
+        </header>
+        <section class="box" id="the_box">
+            <div id="box"></div>
+        </section>
+        <main>
+            <section class="engine">
+                <section class="check">
+                    <input type="number" id="the_guess" placeholder="Enter number . . .">
+                    <button class="btn" id="check">Check!</button>
+                </section>
+                <section class="infos">
+                    <p id="display">Start Guessing . . .</p>
+                    <p id="score">💯 Score:
+                        <span id="num"></span>
+                    </p>
+                    <p id="hiscore">🥇Highscore:
+                        <span id="high">0</span>
+                    </p>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>Developed By <span><a href="https://github.com/mehdiAbDev"> mehdiAbDev</a></span></p>
+        </footer>
+    </body>
+    <!-- <script src="dom.js"></script> -->
+    <script src="dom.js"></script>
+    <!-- <script src="index.js"></script> -->
+
+</html>
