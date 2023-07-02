@@ -45,7 +45,7 @@ const checkNumber = function () {
         highScore.textContent = highscore;
         display('Correct ✅');
     } else {
-        if (score > 0) {
+        if (score > 1) {
             score--;
             display(
                 theGuess > theRandomNumber
@@ -59,8 +59,7 @@ const checkNumber = function () {
     }
 
 }
-const theGuessInput = document.getElementById('the_guess');
-theGuessInput.addEventListener('keypress', function (event) {
+document.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         checkNumber();
     }
