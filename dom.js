@@ -45,7 +45,7 @@ const checkNumber = function () {
         highScore.textContent = highscore;
         display('Correct ✅');
     } else {
-        if (score > 1) {
+        if (score > 0) {
             score--;
             display(
                 theGuess > theRandomNumber
